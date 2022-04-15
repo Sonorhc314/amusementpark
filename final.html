@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mystery flesh pit</title>
+        <meta charset="UTF-8">
+        <style>
+            html
+            {
+                font-family:Arial, Helvetica, sans-serif;
+                color:white;
+            }
+            h1,h2
+            {
+                display:block;
+                background: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+                margin:25px 200px;
+                border-radius: 30px;
+                padding: 20px;
+                text-align:center;
+                color:black;
+            }
+            .blockparent
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .block
+            {
+              opacity:75%;
+              font-size:22px;
+              text-align:center;
+              display: inline-block;
+              margin:20px 20px;
+              width:200px;
+              height:250px;
+              border-radius: 40px;
+              background: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+              padding:10px;
+            }
+            .block img
+            {
+                display: block;
+                width:200px;
+                margin-top:50px;
+                border-radius:15px;
+                
+                color:#141E27;
+            }
+            .container {
+              margin: 0px 120px;
+              white-space: nowrap; /** force the elements to stay side by side **/
+              padding:20px;
+            }
+
+            .container img {
+              width: 550px;
+              height: auto;
+              border-radius: 20px;
+              border: 2px solid black;
+              vertical-align: middle
+            }
+
+            .text-container {
+              display: inline-block;
+              width: calc(100% - 560px); /** containers width - img width - margin-left **/
+              text-align:left;
+              margin: 0 auto;
+              white-space: normal;
+              padding: 15px;
+            }
+            body
+            {
+                font-size:15px;
+                background:#203239;
+            }
+            a
+            {
+                text-decoration:none;
+                color:#203239;
+            }
+            .block:hover
+            {
+                transform: scale(1.1);
+                box-shadow: 15px 15px 5px rgb(32 38 57);
+                transition: all 300ms ease-in-out;
+                background: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+                color:#141E27;
+                cursor:pointer;
+                opacity:100%;
+            }
+            .container:hover
+            {
+                transition: all 300ms ease-in-out;
+                background:#2c434d;
+            }
+            button
+            {
+                margin:0 auto;
+                padding:20px 25px;
+                border-radius: 30px;
+                display:block;
+                color:black;
+                background:#24E9A6;
+                transition: all 200ms ease-in-out;
+                border:1px solid #1A64D6;
+            }
+            button:hover
+            {
+                pointer:cursor;
+                color:black;
+                background:#24E9A6;
+                cursor:pointer;
+            }
+            footer
+            {
+                text-align:center;
+                display:block;
+                margin:0 auto;
+                padding:40px;
+            }
+            hr
+            {
+                opacity: 20%;
+                border-top:2px solid #2af598;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mystery flesh pit national park</h1>
+        <p style="text-align:center; font-size:20px; margin: 30px 200px">
+        As the name suggests, it’s a giant flesh tunnel opening through the Earth’s epidermis, 
+        dermis, hypodermis, and more, revealing colossal esophagi and leviathan spleen. 
+        As you descend, you may encounter “spasm fits” and “gastric ejecta” or feel your bodily moisture being “leeched.” 
+        Deviate from the marked trails and you risk digestion, lethal entanglement 
+        with “Macrobacteria” and “Abyssal Copepods,” or a splattering of “amniotic secretions.”
+        </p>
+        <hr></hr>
+            <div class="blockparent">
+                <div class="block"><a href="#paragraph1">The history<img src="back.jpg"></img></a></div>
+                <div class="block"><a href="#paragraph2">Interesting facts<img src="evolution.jpg"></img></a></div>
+                <div class="block"><a href="#paragraph3">Is it safe?<img src="high.jpg"></img></a></div>
+            </div>
+        <hr></hr>
+        <div class="container" id="paragraph1">
+                <img src="back.jpg"></img>
+            
+            <p class="text-container">Содержание параграфа 1
+            
+            </p>
+        </div>
+        
+        <div class="container" id="paragraph2">
+                <img src="evolution.jpg"></img>
+            
+            <p class="text-container">Содержание параграфа 1
+            
+            
+            </p>
+        </div>
+        
+        <div class="container" id="paragraph3">
+            <img src="high.jpg"></img>
+            <p class="text-container">
+              Once upon a time, beside a lake, there lived a tortoise and two geese
+              who were great friends. As the lake was drying, the geese decided to
+              migrate to a new place. The tortoise also wanted to move with them,
+              but he couldn’t fly, and so he pleaded the geese to take him with
+              them. After trying really hard to convince them, finally, the geese
+              agreed. They held a stick with their beaks and asked the tortoise to
+              hold the stick with his mouth, warning him to not open his mouth and
+              let go of the stick.
+              
+            </p>
+        </div>
+        <hr></hr>
+        <footer>
+            <p>Button to click<button>click</button></p>
+            
+        </footer>
+    </body>
+</html>
