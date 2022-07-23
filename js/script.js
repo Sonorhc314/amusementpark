@@ -1,3 +1,5 @@
+window.onload = function()
+{
         function contact_f()
         {
             let email=prompt("Your email:");
@@ -51,19 +53,19 @@
                   case 0:
                     place.innerHTML=(`<img src="https://64.media.tumblr.com/d0b3476194005eeeeaf116527da3bd79/7a4ebe7aeea97836-00/s1280x1920/18836d1883cfcbcea8fa6bbe277b81471f460b6b.jpg"></img>
                     <p class="text-container">
-                        <strong style="font-size:25px">Wander throgh the corridors of flesh! And bring your friends with you</strong></br></br>
+                        <strong style="font-size:25px">Wander through the corridors of flesh! And bring your friends with you</strong></br></br>
                     </p>`);
                     break;
                   case 1:
                     place.innerHTML=(`<img src="https://64.media.tumblr.com/b1ecd1287a019ccef6b68edbe740e8e9/3dd790e9a69e548d-57/s1280x1920/dcdeda72973d83bdab679522e408033f9f4b786b.jpg"></img>
                     <p class="text-container">
-                        <strong style="font-size:25px">Amniotic Ballasts! like spa but better</strong></br></br>
+                        <strong style="font-size:25px">Amniotic Ballasts! Just like spa but better</strong></br></br>
                     </p>`);
                     break;
                   case 2:
                     place.innerHTML=(`<img src="https://64.media.tumblr.com/772c3c16f19ab052138b1e26049701d0/4fe01ee2cf537632-c0/s1280x1920/ce2998ff472bb7736e8d0801bec03de3f2204e07.jpg"></img>
                     <p class="text-container">
-                        <strong style="font-size:25px">Lower visitor center, your gateaway to an unforgettable visit!</strong></br></br>
+                        <strong style="font-size:25px">Lower visitor center, your gateway to an unforgettable visit!</strong></br></br>
                     </p>`);
                     break;
                   case 3:
@@ -79,12 +81,14 @@
                     </p>`);
                     break;
                 }
-        }
+            }
         
-        var contact=document.querySelector('#contact');
-        var book=document.querySelector('#book');
-        var gen=document.querySelector('#gen');
+            var contact=document.querySelector('#contact');
+            var book=document.querySelector('#book');
+            var gen=document.querySelector('#gen');
+            
+            contact.addEventListener("click", contact_f);
+            book.addEventListener("click", book_f);
+            gen.addEventListener("click", gen_f);
+}
         
-        contact.addEventListener("click", contact_f);
-        book.addEventListener("click", book_f);
-        gen.addEventListener("click", gen_f);
